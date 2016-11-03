@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Library | Jesse Rountree | Front End Developer</title>
+	<link rel="stylesheet" type="text/css" href="css/Normalize_v1.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Examples of pure CSS Animations, Parallax Shifts, Flexbox, and responsive stylings by Jesse Rountree.">
+	<meta name="author" content="Jesse Rountree">
+  
+</head>
+
+<body>
+<div class="stickyFooter">
+<header class='clearfix'>
+	<div class="headerNav clearfix">
+		<h1>Jesse Rountree</h1>
+		<h2>Front End Developer</h2>
+	</div>
+	<div class="navBox clearfix">
+		
+		<nav>
+			<ul class="navLinks clearfix">
+				<li><a href='#respond'>Responsive</a></li>
+				<li><a href='#float'>Floats</a></li>
+				<li><a href='#flexbox'>Flexbox</a></li>
+				<li><a href='#animation'>Animation</a></li>
+				<li><a href='#parallax'>Parallax</a></li>
+				<li><a href='#contact'>CONTACT</a></li>
+			</ul>
+			<div class="topBtn btnLrg"><a href='#topOfPage'>BACK TO TOP</a></div>
+			<div class="topBtn btnMob"><a href='#topOfPage'>TOP</a></div>
+		</nav>
+	</div>
+</header>
+<section>
+	<div class="topPage" id="topOfPage">
+		<h2>CSS Library</h2>
+		<h3>By Jesse Rountree</h3>
+		<p>Everything on this site was rendered, animated, and created using <em>only</em> HTML and CSS.</p>
+		<p>No Javascript, jQuery, or any other form of markup or libraries were used.</p>
+		<p>This entire site is responsive. I strongly encourage you to try a <span class="popTrigger"><em>squish test</em></span><span class="popup">A <em>squish test</em> is just slowly narrowing the browser window's width to see how the contents within the site adjust for the changing space.</span>. If you are learning CSS, this site should be a good resource for you.</p>
+	</div>	
+</section>
+<section>
+	<div class="fluid" id="respond">
+		<h2>General CSS</h2>
+		<h3>Responsive CSS</h3>
+		<div class="square squFluid"></div>
+		<div class="triangle triFluid"></div>
+		<div class="circle cirFluid"></div>
+		<div class="rectangle recFluid"></div>
+
+	</div>	
+</section>
+<section>	
+	<div class="adaptive">
+		<h3>Adaptive CSS</h3>
+		<div class="square squAdapt"></div>
+		<div class="triangle triAdapt"></div>
+		<div class="circle cirAdapt"></div>
+		<div class="rectangle recAdapt"></div>
+
+	
+	</div>
+</section>
+<section>
+	<div class="float clearfix" id="float">
+		<h3>Float CSS</h3>
+		<h4>(With a <span class="popTrigger">'clearfix'</span><span class="popup">A <em>clearfix</em> is a CSS adjustment that fixes the loss of height to a container holding an item that floats.</span>)</h4>		
+		<div class="clearfix">
+			<div class="square squFloat"></div>
+			<p class="twoParagraphs"></p>
+		</div>
+		<div class="clearfix">
+			<div class="circle cirFloat"></div>
+			<p class="twoParagraphs"></p>
+		</div>
+		<h4>(Without a <span class="popTrigger">'clearfix'</span><span class="popup">A <em>clearfix</em> is a CSS adjustment that fixes the loss of height to a container holding an item that floats.</span>)</h4>
+		<div>
+			<div class="square squFloat clearfix"></div>
+			<p class="twoParagraphs"></p>
+		</div>
+		<div>
+			<div class="circle cirFloat"></div>
+			<p class="twoParagraphs"></p>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="flexbox" id="flexbox">
+		<h3>Flexbox CSS</h3>
+		<h4>Items Centered with Space between them</h4>
+		<div class="flexboxContainer">
+			<div class="square squFlex"><p>1</p></div>
+			<div class="circle cirFlex"><p>2</p></div>
+			<div class="square squFlex itemLong"><p>3</p></div>
+			<div class="circle cirFlex"><p>4</p></div>
+			<div class="square squFlex"><p>5</p></div>
+			<div class="circle cirFlex itemTall"><p>6</p></div>
+			<div class="square squFlex"><p>7</p></div>
+			<div class="circle cirFlex"><p>8</p></div>
+			<div class="square squFlex itemTall"><p>9</p></div>
+			<div class="circle cirFlex"><p>10</p></div>
+			<div class="square squFlex"><p>11</p></div>
+			<div class="circle cirFlex itemLong"><p>12</p></div>
+			<div class="square squFlex"><p>13</p></div>
+			<div class="circle cirFlex"><p>14</p></div>
+		</div>
+		<h4>Items Grow with Container</h4>
+		<div class="flexboxContainer">
+			<div class="square squFlexGrow"><p>1</p></div>
+			<div class="circle cirFlexGrow"><p>2</p></div>
+			<div class="square squFlexGrow itemLong"><p>3</p></div>
+			<div class="circle cirFlexGrow"><p>4</p></div>
+			<div class="square squFlexGrow"><p>5</p></div>
+			<div class="circle cirFlexGrow itemTall"><p>6</p></div>
+			<div class="square squFlexGrow"><p>7</p></div>
+			<div class="circle cirFlexGrow"><p>8</p></div>
+			<div class="square squFlexGrow itemTall"><p>9</p></div>
+			<div class="circle cirFlexGrow"><p>10</p></div>
+			<div class="square squFlexGrow"><p>11</p></div>
+			<div class="circle cirFlexGrow itemLong"><p>12</p></div>
+			<div class="square squFlexGrow"><p>13</p></div>
+			<div class="circle cirFlexGrow"><p>14</p></div>
+		</div>
+		<h4>Items Stretch with Container</h4>
+		<div class="flexboxContainerStretch">
+			<div class="square squFlexStretch"><p>1</p></div>
+			<div class="circle cirFlexStretch"><p>2</p></div>
+			<div class="square squFlexStretch"><p>3</p></div>
+			<div class="circle cirFlexStretch"><p>4</p></div>
+			<div class="square squFlexStretch"><p>5</p></div>
+			
+			
+		</div>
+	
+	</div>
+</section>
+<section>
+	<div class="animation" id="animation">
+		<h3>Animation in CSS</h3>
+		<div class="scrollingText">
+			<p class="oneParagraph"></p>
+		</div>
+		<div class="animationContainer">
+			<div class="square squAnimate"></div>
+		</div>
+		<div class="animationContainer cirContainer">
+			<div class="circle cirAnimate"></div>
+		</div>
+		<div class="scenicAnimation">
+			<div class="ufo">
+				<div class="ufoTop">
+					<div class="ufoSpike"></div>
+					<div class="ufoWindow"></div>
+					<div class="ufoWindow midWin"></div>
+					<div class="ufoWindow midWin"></div>
+					<div class="ufoWindow"></div>
+				</div>
+				<div class="ufoBody">
+					<div class="lightBand">
+						<div class="redLight"></div>
+						<div class="whiteLight"></div>
+						<div class="redLight"></div>
+						<div class="whiteLight"></div>
+						<div class="redLight"></div>
+						<div class="whiteLight"></div>
+						<div class="redLight"></div>
+						<div class="whiteLight"></div>
+					</div>
+				</div>
+				<div class="shadow"></div>
+			</div>
+		<div class="bgTree">
+			<div id="trunk"></div>
+			<div id="tree"></div>
+		</div>
+		<div class="grassFor"></div>
+		<div class="grassBack"></div>
+	</div>
+	
+	</div>
+</section>
+<section>
+	<div class="parallax" id="parallax">
+		<h3>Parallax in CSS</h3>
+		<div class="parallaxContainer">
+			<p>Step One</p>
+			<div class="parallaxWindow imgOne">
+				<p>Picture Credit Jen Rountree</p>
+			</div>
+			<p>Step Two</p>
+			<div class="parallaxWindow imgTwo">
+				<p>Picture Credit Jen Rountree</p>
+			</div>
+			<p>Step Three</p>
+			<div class="parallaxWindow imgThree">
+				<p>Picture Credit Jen Rountree</p>
+			</div>
+			<p>End</p>
+		</div>		
+	</div>
+</section>
+
+</div> <!-- / stickyFooter -->
+<footer id="contact">
+
+		<a href="http://www.jesserountree.com" title="My Portfolio" target="_blank"><img src="img/home.png" alt="Portfolio Page Logo" class="social-icon"></a>
+
+		<a href="https://www.linkedin.com/in/jesserountree" target="_blank"><img src="img/linkedin.png" alt="Linkedin Logo" class="social-icon"></a>
+
+        <a href="https://github.com/jrountree" target="_blank"><img src="img/gitHub.png" alt="gitHub Logo" class="social-icon"></a>
+   
+        <a href="http://facebook.com/jesse.rountree"><img src="img/facebook.png" alt="Facebook Logo" class="social-icon" target="_blank"></a>
+        <p>Contact Jesse Rountree through his social networks</p>
+        <p>&copy; 2016 Jesse Rountree.</p> 
+</footer>
+      <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

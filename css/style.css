@@ -1,0 +1,819 @@
+/* :::: GLOBAL CSS :::: */
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+h1 {
+    margin: 10px 20px;
+}
+
+section {
+    margin: 0 20px 20px 20px;
+    border: 1px solid #d3d3d3;
+    padding: 0 20px 20px 20px;
+}
+
+.oneParagraph:after {
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi metus nisi, suscipit eu pretium hendrerit, mattis sit amet ante. Morbi quis tellus sed enim pellentesque interdum bibendum vitae ligula. Duis ullamcorper erat at elit venenatis mattis. Quisque finibus eu diam laoreet venenatis. Sed faucibus accumsan felis, eget consectetur erat bibendum vitae. Sed enim dolor, ullamcorper sit amet ex a, lacinia sodales erat. Donec interdum quis mi sed pharetra. Nam egestas purus odio, vitae tempor eros lacinia sit amet. Maecenas nisi nulla, efficitur ut magna et, condimentum luctus dolor.'
+}
+
+.twoParagraphs:after {
+    content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet lorem ac ex ullamcorper volutpat at in odio. Etiam felis lectus, ultricies a luctus et, posuere et tellus. Maecenas pulvinar laoreet risus a feugiat. Vestibulum placerat, mi mattis convallis ullamcorper, libero felis varius ex, eu aliquet sem nunc non felis. Sed faucibus magna nec risus tincidunt varius. Nunc scelerisque ligula vitae magna pharetra faucibus. Nunc interdum condimentum orci, id tincidunt est fermentum id. Aenean lacinia ex a hendrerit tincidunt. Aenean ut eros sit amet ligula commodo tempor. Curabitur eleifend id urna vehicula tincidunt. Curabitur hendrerit, ante in egestas interdum, elit tellus pulvinar urna, vitae pulvinar tortor turpis et lorem. Vestibulum eu lacinia diam. Sed nec dignissim urna. In egestas lobortis vestibulum. Curabitur ut risus vitae elit fringilla vestibulum nec sit amet enim. Nullam feugiat quam turpis, nec lacinia ligula egestas nec.';
+}
+
+.twoParagraphs::first-letter,
+.oneParagraph::first-letter {
+    vertical-align: top;   
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+:target:before {
+    content:"";
+    display:block;
+    height: 110px;
+    margin:-90px 0 0; 
+}
+
+/* :::: FONT STYLES :::: */
+.squFlex p,
+.cirFlex p,
+.squFlexGrow,
+.cirFlexGrow,
+.squFlexStretch,
+.cirFlexStretch,
+.parallaxContainer  {
+    font-size: 2em;
+}
+
+.twoParagraphs::first-letter,
+.oneParagraph::first-letter {
+    font-size: 1.25em;
+}
+
+.popTrigger,
+.twoParagraphs::first-letter,
+.oneParagraph::first-letter,
+.topBtn a,
+.popup,
+.squFlex p,
+.cirFlex p,
+.squFlexGrow,
+.cirFlexGrow,
+.squFlexStretch,
+.cirFlexStretch,
+.parallaxContainer  {
+    font-weight: 600;
+}
+
+/* :::: ALIGNMENT :::: */
+h3,
+h4,
+footer,
+.topPage,
+.fluid,
+.adaptive,
+.squFlex,
+.cirFlex,
+.squFlexGrow,
+.cirFlexGrow,
+.squFlexStretch,
+.cirFlexStretch,
+.ufo,
+.ufoBody,
+.ufoTop,
+.parallaxContainer  {
+    text-align: center;
+}
+
+.navLinks {
+    text-align: right;
+}
+
+/* :::: COLORS :::: */
+/* WHITE */
+section,
+.parallaxWindow,
+.whiteLight {
+    background: #fff;
+}
+
+/* RED */
+.redLight {
+    background: #e54444;
+}
+
+/* SILVER */
+.ufoSpike {
+    background: #C0C0C0;
+}
+
+/* GREY */
+header,
+body,
+.parallaxContainer {
+    background: #d3d3d3;
+}
+
+/* MINT GREEN */
+.navLinks li,
+.popup {
+    background: #F5FFFA;
+}
+
+/* DARK MINT GREEN */
+.navLinks li:hover {
+    background: #d9f5e7;
+}
+
+/* GREEN */
+.popTrigger,
+.twoParagraphs::first-letter,
+.oneParagraph::first-letter {
+    color: #2E8B57;
+}
+
+/* BROWN */
+#trunk {
+    background: #8B4513;
+}
+
+/* GRASS GREEN */
+.grassFor {
+    background: #32CD32;
+}
+
+/* GRASS DARK GREEN */
+.grassBack {
+    background: #556B2F;
+}
+
+/* TINTED BLUE */
+.topBtn a {
+    background: #87CEFA;
+ }
+
+/* DARK TINTED BLUE */
+.topBtn a:hover {
+    background: #58a7d8;
+}
+
+/* BLUE */
+.popup,
+.popTrigger:hover {
+    color: #191970;
+}
+
+/* :::: HEADER :::: */
+
+.headerNav h1,
+.headerNav h2 {
+	display: block;
+}
+
+.headerNav h2 {
+     margin: 0 0 20px 20px;
+}
+
+.headerNav {
+	float: left;
+}
+
+.navLinks {
+	float: right;
+    width: 70%;
+    margin-right: 20px;
+}
+
+.navLinks li {
+    display: inline-block;
+    margin: 10px 0 10px 10px;
+    padding: 5px 10px;
+}
+
+.topBtn {
+    width: 130px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.btnLrg {
+    display: block;
+}
+
+.btnMob {
+    display: none;
+}
+
+.topBtn a {
+    padding: 5px 10px;
+}
+
+/* :::: FOOTER :::: */
+#contact {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.social-icon {
+    max-width: 25px;
+    margin: 0 20px;
+}
+
+.stickyFooter {  
+    min-height: calc(100vh - 76px);
+}
+
+/* :::: POP UP :::: */
+.popTrigger:hover {
+    cursor: pointer;
+}
+
+.popup {
+    border: 3px solid #48D1CC;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    margin-top: 10px;
+    display: none;
+}
+
+.popTrigger:hover + .popup{
+    display:block;
+}
+
+/* :::: SHAPES :::: */
+
+.square,
+.circle,
+.rectangle {
+	border: 4px solid #0431B4;
+	display: inline-block;
+}
+
+.square,
+.circle {
+	display: inline-block;
+}
+
+.circle {
+	border-radius: 50%;
+}
+
+/*::::: TOP SECTION :::::*/
+.topPage {
+    margin: 120px auto 0 auto;
+    width: 55%;
+}
+
+/*:: FLUID CSS ::*/
+
+.recFluid {
+	display: block;
+    width: 90%;
+    max-width: 1063px;
+    max-height: 68px;
+    padding-top: 5%;
+	margin: 0 auto;
+}
+
+.squFluid,
+.cirFluid,
+.triFluid {
+	width: 25%;
+    max-width: 296px;
+    max-height: 296px;
+	padding-top: 25%;
+	margin: 20px 2.5%;
+}
+
+.triFluid {
+	height: 0;
+	display: inline-block;
+    overflow: hidden;
+    margin-top: -25%;
+    padding-left: 10%;
+    padding-bottom: 10%;
+    margin-right: -12.5%;
+}
+
+.triFluid:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -500px;
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid #0431B4;
+}
+
+/*:: ADAPTIVE CSS ::*/
+
+.adaptive {
+    overflow: hidden;
+}
+
+.squAdapt,
+.cirAdapt {
+	width: 320px;
+	height: 320px;
+    display: inline-block;
+}
+
+.squAdapt {
+    padding: 0;
+}
+
+.cirAdapt {
+    padding: 0;
+    margin-left: 110px;
+}
+
+.triAdapt {
+	height: 0;
+	display: inline-block;
+    overflow: hidden;
+    margin-top: -354px;
+    padding-left: 190px;
+    padding-bottom: 136px;
+    margin-right: -420px;
+}
+.triAdapt:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -500px;
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid #0431B4;
+}
+
+.recAdapt {
+	display: block;
+    width: 1137px;
+    padding-top: 60px;
+    margin: 20px auto 0 auto;
+}
+
+/*:: FLOAT CSS ::*/
+
+.squFloat,
+.cirFloat {
+    width: 320px;
+    height: 320px;
+    margin-bottom: 10px;
+}
+
+.squFloat {
+    float: left;
+    margin-right: 20px;
+}
+
+.cirFloat {
+    float: right;
+    margin-left: 20px;
+}
+
+/* ::::: Flexbox CSS :::: */
+
+.flexboxContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid #d3d3d3;
+}
+
+.squFlex,
+.cirFlex,
+.squFlexGrow,
+.cirFlexGrow,
+.squFlexStretch,
+.cirFlexStretch {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.squFlex p,
+.cirFlex p,
+.squFlexGrow,
+.cirFlexGrow,
+.squFlexStretch,
+.cirFlexStretch {
+    vertical-align: middle;
+}
+
+.itemLong {
+    width: 200px;
+}
+
+.itemTall {
+    height: 200px;
+}
+
+.squFlexGrow,
+.cirFlexGrow,
+.squFlexStretch,
+.cirFlexStretch {
+    flex-grow: 1;
+}
+
+.flexboxContainerStretch {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    border: 1px solid #d3d3d3;
+
+}
+
+/* :::: ANIMATION CSS :::: */
+/* :: SCROLLING TEXT :: */
+.scrollingText {
+    overflow: hidden;
+}
+
+.oneParagraph {
+    white-space: nowrap;
+    position: relative;
+    x-transition: all 50s ;
+    animation: scrollMe linear 40s infinite;
+}
+
+/*:: UFO SHAPE ::*/
+.ufo{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    x-transition: all .5s ;
+    animation: ufopath cubic-bezier(0.37, 1.1, 1, -0.68) 3.5s infinite;
+}
+
+.ufoBody,
+.ufoTop {
+    background: #C0C0C0;
+    background: -webkit-linear-gradient(#696969, #C0C0C0,  #C0C0C0, #696969); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#696969, #C0C0C0, #C0C0C0, #696969); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#696969, #C0C0C0, #C0C0C0, #696969); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#696969, #C0C0C0, #C0C0C0, #696969); /* Standard syntax */
+}
+
+.ufoSpike {
+    width: 2%;
+    height: 60%;
+    position: absolute;
+    left: 50%;
+    top: -25%;
+    z-index: -1;
+}
+
+.ufoBody {
+    width: 95%;
+    height: 45%;
+    border-radius: 50%;
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+}
+
+.lightBand {
+    width: 105%;
+    height: 41%;
+    background: -webkit-linear-gradient(#C0C0C0, #696969, #C0C0C0); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#C0C0C0, #696969, #C0C0C0); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C0C0C0, #696969, #C0C0C0); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C0C0C0, #696969, #C0C0C0); /* Standard syntax */
+    border-radius: 31%;
+    display: inline-block;
+    position: relative;
+    top: 30%;
+    left: -2.5%;
+    overflow: hidden;
+}
+
+.redLight,
+.whiteLight {
+    width: 10%;
+    padding-top: 10%;
+    display: inline-block;
+    margin: 4%;
+    border-radius: 50%;
+    position: relative;
+    x-transition: all .5s ;
+    animation: ufolights cubic-bezier(0.26, 0.21, 0.95, 0.96) .5s infinite;
+}
+
+.ufoTop {
+    width: 75%;
+    height: 20%;
+    border-radius: 50% 50% 0 0;
+    z-index: 0;
+    position: relative;
+    top: 10%;
+    left: 12.5%;
+}
+
+.ufoWindow {
+    width: 20%;
+    height: 95%;
+    border-radius: 50% 50% 0 0;
+    background: #fff;
+    background: -webkit-radial-gradient(circle, #fff, #fff, #DCDCDC, #000); /* Safari */
+    background: -o-radial-gradient(circle, #fff, #fff, #DCDCDC, #000); /* Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(circle, #fff, #fff, #DCDCDC, #000); /* Firefox 3.6 to 15 */
+    background: radial-gradient(circle, #fff, #fff, #DCDCDC, #000); /* Standard syntax */
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.midWin {
+    padding-top: 4%;
+}
+
+.shadow {
+    width: 90%;
+    border-radius: 50%;
+    background: rgba(0,0,0,.5);
+    position: relative;
+    top: 226%;
+    left: 0;
+    padding-top: 46%;
+    z-index: 4;
+}
+
+/* :: TREE SHAPE :: */
+
+.bgTree {
+    width: 100px;
+    position: relative;
+    left: 47px;
+    top: 50px;
+    z-index: 4;
+}
+
+#tree {
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 60px solid #006400;
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 20px;
+}
+
+#tree:before {
+    content:'';
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 90px solid #006400;
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: -90px;
+    top: 30px;
+}
+
+#tree:after {
+    content:'';
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 120px solid #006400;
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: -120px;
+    top: 60px;
+}
+
+#trunk {
+    width: 40px;
+    height: 53px;
+    position: absolute;
+    top: 168px;
+    left: 61px;
+}
+
+.scenicAnimation {
+    background: #0000FF;
+    background: -webkit-linear-gradient(#0000FF, #1E90FF); /* Safari 5.1 > 6.0 */
+    background: -o-linear-gradient(#0000FF, #1E90FF); /* Opera 11.1 > 12.0 */
+    background: -moz-linear-gradient(#0000FF, #1E90FF); /* Firefox 3.6 > 15 */
+    background: linear-gradient(#0000FF, #1E90FF); /* Standard */
+    height: 397px;
+    margin: 120px 0;
+    padding-top: 20px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.grassFor {
+    width: 150%;
+    height: 20%;
+    transform: rotate(-2deg);
+    position: relative;
+    top: 61%;
+    left: -5%;
+    z-index: 5;
+}
+
+.grassBack {
+    width: 150%;
+    height: 36%;
+    transform: rotate(1deg);
+    position: relative;
+    top: 27%;
+    left: -5%;
+    z-index: 1;
+}
+
+/* :: SHAPE ANIMATIONS :: */
+
+ .animationContainer {
+    width: calc(100% - 100px);
+}
+
+.cirContainer {
+    height: 200px;
+    margin-bottom: 100px;
+}
+
+.cirAnimate {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 0;   
+    top: 0 ;
+
+    x-transition: all 4.5s ease-in-out;
+    y-transition: all 1s;
+    animation: ani 5s cubic-bezier(0.43, 0.69, 0.4, 0.67) infinite, aniy 5s infinite;
+   }
+
+.squAnimate {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 0;   
+    top: 0 ;
+
+    x-transition: all 4.5s ease-in-out;
+    animation: ani 5s infinite;
+}
+
+/* :::: KEY FRAMES :::: */
+@keyframes scrollMe {
+    0% {
+        right: -100%;
+    }
+    99.999% {
+        right: 400%;
+    }
+    100% {
+        right: -100%;
+        }
+}
+
+
+@keyframes ani {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes aniy {
+  0% {
+    top: 0;
+  }
+
+  25% {
+    top: 100%; 
+  }
+
+  50% {
+    top: 0;
+  }
+
+  75% {
+    top: 100%;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes ufolights {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: 100%;
+  }
+
+  50.01%{
+    left: -100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes ufopath {
+  0% {
+    left: 0;
+    top: 0;
+  }
+
+  50% {
+    left: -100%;
+    top: 5%;
+  }
+
+  50.01%{
+    left: 100%;
+
+  }
+
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+/* ::::: Parallax Shift :::: */
+.parallaxContainer  {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.parallaxWindow {
+    width: 80%;
+    height: 400px;
+    margin: 100px auto;
+    display: block;
+}
+.parallaxWindow p {
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 20%;
+    color: rgba(0,0,0,0.25);
+}
+
+.imgOne,
+.imgTwo,
+.imgThree {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 100% auto;
+    position:relative;
+}
+
+.imgOne {
+    background-image: url(../img/Scenic-Mountain-View.jpg);
+}
+
+.imgTwo {
+    background-image: url(../img/Scenic-Lake-With-Mountains.jpg);
+}
+
+.imgThree {
+    background-image: url(../img/Tree-Roots-Drift-Wood.jpg);
+}
